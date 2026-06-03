@@ -19,37 +19,38 @@ const ContactSection = ({ refs }) => {
       </div>
 
       {/* Content Container */}
-      <div ref={finalContainerRef} className="absolute inset-0 flex flex-col items-center justify-center opacity-0 px-4 md:px-8 w-full h-full">
+      <div ref={finalContainerRef} className="absolute inset-0 flex flex-col items-center justify-between opacity-0 px-4 md:px-8 w-full h-full pb-24 md:pb-32 pt-32">
         
-        <div className="flex flex-col items-center justify-center text-center">
-          <h1 ref={finalHeadingRef} className="text-white text-[clamp(3rem,12vw,8rem)] font-black tracking-tighter leading-none uppercase">
+        {/* Main Heading (Centered vertically in the remaining space) */}
+        <div className="flex-1 flex flex-col items-center justify-center text-center">
+          <h1 ref={finalHeadingRef} className="text-white text-[clamp(2.5rem,10vw,8rem)] font-black tracking-tighter leading-[1.1] uppercase">
             LET'S BUILD<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-700">SOMETHING</span><br/>
             EXCEPTIONAL
           </h1>
         </div>
 
-        {/* Contact Menu */}
-        <div className="absolute bottom-32 md:bottom-40 w-full max-w-4xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-16 text-center pointer-events-auto z-50">
+        {/* Contact Menu (Pushed to bottom, naturally flowing) */}
+        <div className="w-full max-w-4xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-16 text-center pointer-events-auto z-50">
           <div ref={finalEmailRef} className="flex flex-col items-center group cursor-pointer" data-cursor="COPY">
-            <span className="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase mb-2 md:mb-4 opacity-70 pointer-events-none">Email</span>
-            <a href="mailto:shivadarshan600@gmail.com" className="text-white text-lg md:text-2xl font-light tracking-wide relative inline-block pb-1">
+            <span className="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase mb-1 md:mb-4 opacity-70 pointer-events-none">Email</span>
+            <a href="mailto:shivadarshan600@gmail.com" className="text-white text-base md:text-2xl font-light tracking-wide relative inline-block pb-1">
               shivadarshan600@gmail.com
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
             </a>
           </div>
           
           <div ref={finalLinkedinRef} className="flex flex-col items-center group cursor-pointer" data-cursor="VISIT">
-            <span className="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase mb-2 md:mb-4 opacity-70 pointer-events-none">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/shiva-darshan-01b782371/" target="_blank" rel="noreferrer" className="text-white text-lg md:text-2xl font-light tracking-wide relative inline-block pb-1">
+            <span className="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase mb-1 md:mb-4 opacity-70 pointer-events-none">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/shiva-darshan-01b782371/" target="_blank" rel="noreferrer" className="text-white text-base md:text-2xl font-light tracking-wide relative inline-block pb-1">
               /in/shiva-darshan
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
             </a>
           </div>
           
           <div ref={finalGithubRef} className="flex flex-col items-center group cursor-pointer" data-cursor="EXPLORE">
-            <span className="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase mb-2 md:mb-4 opacity-70 pointer-events-none">GitHub</span>
-            <a href="https://github.com/Shivadarshan-HM" target="_blank" rel="noreferrer" className="text-white text-lg md:text-2xl font-light tracking-wide relative inline-block pb-1">
+            <span className="text-teal-500 text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase mb-1 md:mb-4 opacity-70 pointer-events-none">GitHub</span>
+            <a href="https://github.com/Shivadarshan-HM" target="_blank" rel="noreferrer" className="text-white text-base md:text-2xl font-light tracking-wide relative inline-block pb-1">
               @Shivadarshan-HM
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
             </a>
